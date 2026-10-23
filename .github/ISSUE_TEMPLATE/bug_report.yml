@@ -1,0 +1,20 @@
+name: Bug report
+description: Report a reproducible extraction, validation or report defect
+body:
+  - type: markdown
+    attributes:
+      value: Use synthetic examples only. Do not upload private documents or secrets. Security vulnerabilities follow SECURITY.md.
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and expected behavior
+      description: Include the changed fact, authority, exact command and synthetic example.
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment and error
+      description: Python/OS/agent version, helper version, and relevant error text.
+    validations:
+      required: true
