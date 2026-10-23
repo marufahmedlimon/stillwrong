@@ -1,0 +1,36 @@
+name: Helper checks
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  helpers:
+    name: ${{ matrix.os }} / Python ${{ matrix.python }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+        python: ['3.11', '3.12']
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Install pinned extraction dependencies
+        run: python -m pip install -r skills/stillwrong/requirements.txt
+      - name: Compile Python sources
+        run: python -m compileall -q skills/stillwrong/scripts scripts tests
+      - name: Build synthetic demo packs
+        run: python scripts/build_demo.py
+      - name: Run deterministic checks
+        run: python -m unittest discover -s tests -v
+      - name: Check publishable source and portable examples
+        run: python scripts/check_release.py
