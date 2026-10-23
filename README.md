@@ -4,6 +4,8 @@
 
 <p align="center"><a href="#quick-start">Quick start</a> · <a href="evals/RESULTS.md">Verification</a> · <a href="LICENSE">MIT License</a></p>
 
+<p align="center"><a href="https://github.com/marufahmedlimon/stillwrong/actions/workflows/ci.yml"><img src="https://github.com/marufahmedlimon/stillwrong/actions/workflows/ci.yml/badge.svg" alt="Helper checks"></a></p>
+
 ## A small change. A long paper trail.
 
 Your client reduces the budget. You update the spreadsheet. The proposal, slides
@@ -39,7 +41,7 @@ Requires a skill-capable agent with local file/shell access and **Python 3.11+**
 The host AI judges meaning; Python extracts, validates evidence/arithmetic and
 renders reports. This is not a standalone AI.
 
-After the repository is public, paste into your agent:
+Paste this into your skill-capable agent:
 
 ```text
 Install StillWrong from https://github.com/marufahmedlimon/stillwrong.
@@ -47,15 +49,15 @@ Read INSTALL.md, install the complete skills/stillwrong folder for this agent,
 and verify it with the bundled example. Do not edit unrelated settings.
 ```
 
-Or use the [Skills CLI](https://github.com/vercel-labs/skills) with Node.js/npm:
+Or use the [Skills CLI](https://github.com/vercel-labs/skills) with Node.js 22.20+ and npm:
 
 ```sh
 npx skills add marufahmedlimon/stillwrong --skill stillwrong
 ```
 
 No Node? Copy the whole `skills/stillwrong` directory into your agent's supported
-skill location. See [INSTALL.md](INSTALL.md). The URL is the intended publishing
-destination, not a claim that an unpublished repository is already reachable.
+skill location. See [INSTALL.md](INSTALL.md). The public CLI installation was
+verified in an isolated project; native host invocation is a separate check.
 
 ### First run from a source checkout
 
@@ -119,8 +121,9 @@ Six synthetic packs cover budgets, launch date, price, owner, quantity and
 currency formatting: 24 labelled targets and 24 negative controls. Keep the answer key and
 prefilled reports hidden from evaluating agents. [Evaluation protocol](evals/PROTOCOL.md)
 defines the baseline and scoring limits. No overall precision/recall threshold
-or universal host compatibility is claimed. CI is configured for Windows, macOS
-and Linux; configuration is not proof of completed CI runs.
+or universal host compatibility is claimed. [All six helper CI jobs](https://github.com/marufahmedlimon/stillwrong/actions/runs/40004290693)
+passed on Windows, macOS and Linux with Python 3.11/3.12. These are deterministic
+helper checks, not a semantic accuracy benchmark.
 
 ## Privacy
 
