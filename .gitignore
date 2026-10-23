@@ -1,0 +1,31 @@
+# Python and isolated runtime environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.coverage
+htmlcov/
+*.egg-info/
+
+# Local audit inputs and generated run output may contain private material.
+inputs/
+runs/
+outputs/
+.stillwrong/
+github-publish/
+local-only/
+docs/*.bn.md
+launch/
+*.zip
+SHA256SUMS
+*.log
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
