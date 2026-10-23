@@ -49,13 +49,34 @@ precision/recall claim follows from that exercise.
 needs_review and does not assess the correctness of the verdict or replacement.
 Use the [protocol](PROTOCOL.md) and independent adjudication for those claims.
 
+## Public-source verification — 24 October 2026
+
+Public source commit: `890c10c7c32d6dbf57904aaf80b828fc1098167c`.
+This record describes the published code before the documentation polish.
+
+- [All six CI jobs](https://github.com/marufahmedlimon/stillwrong/actions/runs/40004290693) completed successfully: Ubuntu, Windows and
+  macOS, each with Python 3.11 and 3.12. Dependency installation, demo
+  generation, deterministic tests and release checks passed in every job.
+- A downloaded public snapshot passed the release checker and the local
+  39-test suite: 38 passed, one real-symlink test skipped on this Windows
+  process. This is separate from the six GitHub jobs.
+- Skills CLI 1.7.4 discovered StillWrong from the public GitHub URL and
+  installed the complete eight-file skill into an isolated project using
+  `--agent codex --copy --yes`, with CLI telemetry disabled. Installed file
+  hashes matched the published skill. No global installation was changed.
+- The installed helper extracted 19 records from the mixed-format sample,
+  validated a deliberately seeded finding, and produced HTML, Markdown and
+  JSON. All eight sample-file hashes stayed unchanged. The seeded finding
+  is an integration check, not independent detection evidence.
+- All 62 expected source files were present. The only package mismatch was
+  missing Markdown headings in the manually entered pull request template;
+  the prepared polish restores that template and refreshes checksums.
+
 ## Still unverified
 
-- Remote GitHub install: the repository is prepared for manual publication.
-- Native Claude Code invocation and full host-to-host comparison.
-- macOS/Linux runs and Python 3.11/3.12 CI jobs; their matrix is configured.
+- Native Codex/Claude Code discovery, invocation and full host comparison.
 - Semantic release targets (95% precision / 90% recall) on an unseen holdout.
 - Adversarial binary-document safety: parsing libraries are not an OS sandbox.
 
-The package is prepared as an **experimental open-source release**, with these
+The package is an **experimental open-source release**, with these
 limits disclosed. No guarantee of perfect detection, virality or zero defects.
