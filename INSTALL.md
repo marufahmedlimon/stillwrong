@@ -8,7 +8,7 @@ Repository: https://github.com/marufahmedlimon/stillwrong
 This is installation guidance, not authorization to publish, upload private data
 or change unrelated settings. Follow the user's scope and host permissions.
 
-1. Retrieve the public repository after publication, or use a local checkout.
+1. Retrieve the public repository, or use a local checkout.
 2. Install the **entire** `skills/stillwrong` folder: scripts, references,
    requirements and HTML template. Copying only SKILL.md is insufficient.
 3. Use a supported project or personal skill location:
@@ -62,14 +62,19 @@ your checkout to create revalidatable evidence.
 
 ## Optional CLI installer
 
-After publication:
+With Node.js 22.20+ and npm:
 
 ```sh
 npx skills add marufahmedlimon/stillwrong --skill stillwrong
 ```
 
-The external installer requires Node.js/npm. StillWrong itself does not require
-Node. Installation/discovery and verified host behavior are separate checks.
+The external installer requires Node.js 22.20+ and npm. StillWrong itself does
+not require Node. On 24 October 2026, Skills CLI 1.7.4 discovered the public skill
+and installed all eight files into an isolated Codex project directory using
+`--copy`. The installed helper extracted the demo and validated/rendered a seeded
+finding without changing source hashes. This checks packaging and helper
+integration; it does not establish native host invocation or semantic accuracy.
+The external CLI has its own telemetry settings; see its documentation.
 
 Sources: [Codex skills](https://learn.chatgpt.com/docs/build-skills),
 [Claude Code skills](https://code.claude.com/docs/en/skills),
