@@ -1,0 +1,4 @@
+interface:
+  display_name: "StillWrong"
+  short_description: "Find stale facts after a project detail changes"
+  default_prompt: "Use $stillwrong to audit these files after a fact changed and draft evidence-linked corrections."

@@ -1,0 +1,1 @@
+User: Orion-2 launch date changed from 2026-11-14 to 2026-12-05; only current Orion-2 claims apply. Preserve historical, rejected and unrelated references.

@@ -1,0 +1,134 @@
+[
+  {
+    "pack": "pack-01",
+    "change": {
+      "entity": "Orion-1",
+      "fact": "approved budget",
+      "old": "USD 15000",
+      "new": "USD 12000",
+      "authority": "User: current Orion-1 approved budget is USD 12000; advance remains 20% of approved budget."
+    },
+    "positive_quotes": [
+      "Orion-1 current proposal budget: USD 15000",
+      "Orion-1 current sales budget: USD 15k",
+      "Orion-1 current approved budget: USD 15,000",
+      "Orion-1 current advance: USD 3000; advance is 20% of approved budget."
+    ],
+    "negative_quotes": [
+      "Historical: Orion-1 approved budget was USD 15000 last year.",
+      "Unrelated project Vega current budget: USD 15000",
+      "Orion-1 rejected option: USD 15000",
+      "Orion-1 current approved budget: USD 12000"
+    ]
+  },
+  {
+    "pack": "pack-02",
+    "change": {
+      "entity": "Orion-2",
+      "fact": "launch date",
+      "old": "2026-11-14",
+      "new": "2026-12-05",
+      "authority": "User: Orion-2 launch date changed from 2026-11-14 to 2026-12-05; only current Orion-2 claims apply."
+    },
+    "positive_quotes": [
+      "Current launch: 14 November 2026",
+      "Launch month: November 2026",
+      "Current launch: 2026-11-14",
+      "Launch announcement: November 14, 2026"
+    ],
+    "negative_quotes": [
+      "Historical launch: 2025-11-14",
+      "Vega launch: 2026-11-14",
+      "Rejected launch: 2026-11-14",
+      "Current launch: 2026-12-05"
+    ]
+  },
+  {
+    "pack": "pack-03",
+    "change": {
+      "entity": "Orion-3",
+      "fact": "monthly USD price",
+      "old": "USD 20",
+      "new": "USD 25",
+      "authority": "User: Orion-3 monthly USD price changed from USD 20 to USD 25; only current Orion-3 claims apply."
+    },
+    "positive_quotes": [
+      "Current monthly USD price: $20",
+      "Monthly subscription: USD 20",
+      "Current US monthly plan: twenty dollars",
+      "Current price: USD20/month"
+    ],
+    "negative_quotes": [
+      "Annual plan: USD 20",
+      "Legacy contract monthly price: USD 20",
+      "Current monthly price: EUR 20",
+      "Current monthly USD price: $25"
+    ]
+  },
+  {
+    "pack": "pack-04",
+    "change": {
+      "entity": "Orion-4",
+      "fact": "current project owner",
+      "old": "Alex Chen",
+      "new": "Samira Khan",
+      "authority": "User: Orion-4 current project owner changed from Alex Chen to Samira Khan; only current Orion-4 claims apply."
+    },
+    "positive_quotes": [
+      "Current project owner: Alex Chen",
+      "Owner contact: Alex Chen",
+      "Accountable lead: Alex Chen",
+      "Project approval owner: Alex Chen"
+    ],
+    "negative_quotes": [
+      "Former owner: Alex Chen",
+      "Vega project owner: Alex Chen",
+      "Current designer: Alex Chen",
+      "Current project owner: Samira Khan"
+    ]
+  },
+  {
+    "pack": "pack-05",
+    "change": {
+      "entity": "Orion-5",
+      "fact": "current order quantity",
+      "old": "100 units",
+      "new": "80 units",
+      "authority": "User: Orion-5 current order quantity changed from 100 units to 80 units; only current Orion-5 claims apply."
+    },
+    "positive_quotes": [
+      "Current order: 100 units",
+      "Units to deliver: one hundred",
+      "Current shipment quantity: 100 units",
+      "Confirmed order quantity: 100"
+    ],
+    "negative_quotes": [
+      "Prior shipment: 100 units",
+      "Vega order: 100 units",
+      "Rejected order: 100 units",
+      "Current order: 80 units"
+    ]
+  },
+  {
+    "pack": "pack-06",
+    "change": {
+      "entity": "Orion-6",
+      "fact": "approved current BDT budget",
+      "old": "BDT 15000",
+      "new": "BDT 12000",
+      "authority": "User: Orion-6 approved current BDT budget changed from BDT 15000 to BDT 12000; only current Orion-6 claims apply."
+    },
+    "positive_quotes": [
+      "Current budget: BDT 15,000",
+      "Approved budget: BDT 15k",
+      "Current BDT allocation: 15000",
+      "Current approved budget: BDT 15,000"
+    ],
+    "negative_quotes": [
+      "Historical BDT budget: 15000",
+      "Current USD budget: 15000",
+      "Rejected BDT budget: 15000",
+      "Current approved budget: BDT 12000"
+    ]
+  }
+]
