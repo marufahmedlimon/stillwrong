@@ -5,13 +5,14 @@ passing helper test suite does not establish that an AI agent finds stale claims
 
 ## Current status
 
-- Candidate version: **v0.1.1**, prepared for manual publication.
+- Published source version: **v0.1.1**, an experimental public release.
 - The demo generator provides six synthetic packs with 24 target claims and 24
   negative controls. Check the generated answer key for their precise identities.
 - Semantic benchmark results are **pending**. No precision, recall, speedup, or
   release threshold is claimed as achieved by this document.
-- Claude Code, macOS, and Linux are not claimed as tested. A CI configuration is
-  a proposed check until a run has actually completed.
+- Deterministic helpers passed [six CI jobs](https://github.com/marufahmedlimon/stillwrong/actions/runs/40004290693) on Ubuntu, Windows
+  and macOS with Python 3.11/3.12. [Verification record](RESULTS.md) documents the
+  public CLI installation and remaining native-host/semantic evaluation limits.
 
 ## Two evaluations
 
